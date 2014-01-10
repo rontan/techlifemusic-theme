@@ -32,7 +32,7 @@ module.exports = (function (contribs) {
             // @module browserify
             browserify : {
                 main : {
-                    src : 'js/src/**/*.js',
+                    src : 'js/src/**/techlifemusic.app.js',
                     dest : 'js/app.js'
                 }
             },
@@ -61,7 +61,7 @@ module.exports = (function (contribs) {
             watch : {
                 scripts : {
                     files : '**/*.js',
-                    tasks : ['compile-scripts'],
+                    tasks : ['compile-scripts-production'],
                     options : {
                         interrupt : true,
                         spawn : false,
@@ -70,7 +70,7 @@ module.exports = (function (contribs) {
                 },
                 styles : {
                     files : '**/*.less',
-                    tasks : ['compile-styles'],
+                    tasks : ['compile-styles-production'],
                     options : {
                         interrupt : true,
                         spawn : false,
