@@ -71,7 +71,7 @@ module.exports = (function (contribs) {
                 },
                 styles : {
                     files : '**/*.less',
-                    tasks : ['compile-styles-production'],
+                    tasks : ['compile-styles', 'compile-styles-production'],
                     options : {
                         interrupt : true,
                         spawn : false,
