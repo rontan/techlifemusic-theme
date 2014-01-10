@@ -19,6 +19,7 @@ module.exports = (function (contribs) {
             uglify : {
                 options : {
                     sourceMap : 'js/app.build.map',
+                    sourceMappingURL : 'app.build.map',
                     preserveComments : 'some',
                     banner : '/** @author Richard Neil Ilagan [me@richardneililagan.com] */'
                 },
