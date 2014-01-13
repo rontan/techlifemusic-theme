@@ -338,3 +338,59 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+body {
+  font-family: 'Source Sans Pro';
+  font-size: 16px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2 {
+  font-family: 'Oswald';
+  font-weight: 'bold';
+}
+header > h1,
+header > h2 {
+  font-size: 1.4em;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  text-align: right;
+  color: #ff6432;
+}
+header > h1:before,
+header > h2:before {
+  content: "//";
+  padding-right: .8em;
+  color: #acacac;
+}
+header > h1 span,
+header > h2 span {
+  color: #212121;
+}
+header > h1 span:nth-child(2),
+header > h2 span:nth-child(2) {
+  color: #404040;
+}
+header > h1 span:nth-child(3),
+header > h2 span:nth-child(3) {
+  color: #5e5e5e;
+}
+/** ### generic palette */
+/** ### header palette */
+/** ### base styling */
+html,
+body {
+  height: 100%;
+}
+body {
+  border-top: 5px solid #212121;
+  padding: 0 20px;
+  /** ### header area */
+}
