@@ -110,7 +110,7 @@ function techlifemusic_scripts_and_styles () {
         wp_register_script('techlifemusic-logic', get_stylesheet_directory_uri() . '/js/app.min.js', array(), '', true);
 
         // load primary stylesheet (header)
-        wp_register_script('techlifemusic-stylesheet', get_stylesheet_directory_uri() . '/css/style.min.css', array(), '', 'all');
+        wp_register_style('techlifemusic-stylesheet', get_stylesheet_directory_uri() . '/css/style.min.css', array(), '', 'all');
 
         // queue
         wp_enqueue_script('techlifemusic-modernizr');
