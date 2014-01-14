@@ -476,12 +476,16 @@ body > header > nav ul li a {
 }
 body > header #loupe {
   background: #212121;
+  position: relative;
   padding: 0 20px;
 }
-body > header #loupe h4 {
+body > header #loupe .slide {
+  position: relative;
+}
+body > header #loupe .slide h4 {
   padding-top: 24px;
 }
-body > header #loupe h4:after {
+body > header #loupe .slide h4:after {
   content: "_";
   color: #ff6432;
 }
