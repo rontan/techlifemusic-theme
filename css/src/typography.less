@@ -1,6 +1,9 @@
+@import 'snippets';
+
 body {
-    font-family : 'Source Sans Pro';
-    font-size : 16px;
+    font-family: 'Source Sans Pro';
+    font-weight: 200;
+    font-size: 16px;
 }
 
 h1,
@@ -9,42 +12,69 @@ h3,
 h4,
 h5,
 h6 {
-    margin : 0;
-    padding : 0;
+    margin: 0;
+    padding: 0;
 }
 
 h1,
 h2 {
-    font-family : 'Oswald';
-    font-weight : 'bold';
+    font-family: 'Oswald';
+    font-weight: 'bold';
 
     header > & {
-        font-size : 1.4em;
-        letter-spacing : -1px;        
-        text-transform : uppercase;
-        text-align : right;
-        color : @primary-orange;
+        font-size: 1.4em;
+        letter-spacing: -1px;        
+        text-transform: uppercase;
+        text-align: right;
+        color: @primary-orange;
 
-        &:before {            
-            content : "//";
-            padding-right : .8em;
-            color : @secondary-gray;
+        &:before {                                    
+            color: @secondary-gray;
         }
 
-        @header-color : @primary-gray;
-        @header-gradient-step : 12%;
+        @header-color: @primary-gray;
+        @header-gradient-step: 12%;
 
         span {
-            color : @header-color;
+            color: @header-color;
 
             &:nth-child(2) {
-                color : lighten(@header-color, @header-gradient-step);
+                color: lighten(@header-color, @header-gradient-step);
             }
 
             &:nth-child(3) {
-                color : lighten(lighten(@header-color, @header-gradient-step), @header-gradient-step);
+                color: lighten(lighten(@header-color, @header-gradient-step), @header-gradient-step);
             }
-
         }
     }
+}
+
+a:link {
+    // this theme's general link visual has no underline
+    // :: just override this with another rule if ever
+    text-decoration: none;
+}
+
+/** ### navigation */
+nav {
+    // the primary site nav bar
+    header > & {
+        text-transform: uppercase;
+
+        ul {            
+
+            li {
+                font-size: 1.1em;
+
+                a {                    
+                    color: @primary-orange;
+                }
+            }
+        }
+    }
+}
+
+/** ### widgets */
+#loupe {
+
 }

@@ -1,0 +1,31 @@
+@import 'palette';
+
+/** ### classes */
+
+/** @snippet class :: adds a trailing caret */
+.suffix {
+    &:after {
+        content: "_";
+        color: @primary-orange;
+    }
+}
+
+/** @snippet class :: adds a double-slash leader */
+.prefix {
+    &:before {
+        content: "//";
+    }
+}
+/** ### mixins */
+
+/** @snippet mixin :: adds the prescribed horizontal body padding
+                      to whatever element this is called against 
+                      */
+.bodypadding (true) {
+    // if (true) was passed as a parameter (or none was passed),
+    // modify box sizing to include the border box in width calculation
+    box-sizing: border-box;
+}
+.bodypadding (@_: true){
+    padding:0 @body-horizontal-padding;    
+}

@@ -338,8 +338,26 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+/** ### generic measurements */
+/** ### generic palette */
+/** ### header palette */
+/** ### classes */
+/** @snippet class :: adds a trailing caret */
+.suffix:after {
+  content: "_";
+  color: #ff6432;
+}
+/** @snippet class :: adds a double-slash leader */
+.prefix:before {
+  content: "//";
+}
+/** ### mixins */
+/** @snippet mixin :: adds the prescribed horizontal body padding
+                      to whatever element this is called against 
+                      */
 body {
   font-family: 'Source Sans Pro';
+  font-weight: 200;
   font-size: 16px;
 }
 h1,
@@ -366,8 +384,6 @@ header > h2 {
 }
 header > h1:before,
 header > h2:before {
-  content: "//";
-  padding-right: .8em;
   color: #acacac;
 }
 header > h1 span,
@@ -382,15 +398,67 @@ header > h1 span:nth-child(3),
 header > h2 span:nth-child(3) {
   color: #5e5e5e;
 }
-/** ### generic palette */
-/** ### header palette */
+a:link {
+  text-decoration: none;
+}
+/** ### navigation */
+header > nav {
+  text-transform: uppercase;
+}
+header > nav ul li {
+  font-size: 1.1em;
+}
+header > nav ul li a {
+  color: #ff6432;
+}
+/** ### widgets */
 /** ### base styling */
 html,
 body {
   height: 100%;
+  box-sizing: border-box;
 }
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/** ### sectional styling */
 body {
   border-top: 5px solid #212121;
-  padding: 0 20px;
   /** ### header area */
+}
+body > header h1,
+body > header h2 {
+  margin-top: 5px;
+  padding: 0 20px;
+}
+body > header h1:before,
+body > header h2:before {
+  content: "//";
+}
+body > header h1:after,
+body > header h2:after {
+  content: "_";
+  color: #ff6432;
+}
+body > header h1:before,
+body > header h2:before {
+  padding-right: .8em;
+}
+body > header > nav ul {
+  margin: 5px 0;
+  text-align: right;
+  padding: 0 20px;
+}
+body > header > nav ul li {
+  display: inline-block;
+}
+body > header > nav ul li a {
+  padding: 0 .3em;
+  display: inline-block;
+}
+body > header #loupe {
+  background: #212121;
+  padding: 0 20px;
 }
