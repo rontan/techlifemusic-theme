@@ -25,4 +25,7 @@
     </section>
 </header>
 
+<div id="content" role="main">
+</div>
+
 <?php get_footer(); ?>

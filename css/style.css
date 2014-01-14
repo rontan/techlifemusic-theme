@@ -514,3 +514,6 @@ body > header #loupe .slide h4:after {
   content: "_";
   color: #ff6432;
 }
+body > header #loupe .slide p {
+  padding-bottom: 6px;
+}
