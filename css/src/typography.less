@@ -1,9 +1,33 @@
 @import 'snippets';
 
+/** ### fontface declarations */
+@source-sans-pro :  'Source Sans Pro', Arial, sans-serif;
+@source-code-pro :  'Source Code Pro', Consolas, 'Courier New', monospace;
+@roboto-slab :      'Roboto Slab', sans-serif;
+@oswald :           'Oswald', Calibri, Arial, sans-serif;
+
+.font-config (@_...) {
+    font: @arguments;
+}
+
+.font-source-sans (@size:1em, @weight:300) {
+    .font-config(@weight, @size, @source-sans-pro);
+}
+
+.font-source-code (@size:1em, @weight:300) {
+    .font-config(@weight, @size, @source-code-pro);
+}
+
+.font-roboto-slab (@size:1em, @weight:300) {
+    .font-config(@weight, @size, @roboto-slab);
+}
+
+.font-oswald (@size:1em, @weight:700) {
+    .font-config(@weight, @size, @oswald);
+}
+
 body {
-    font-family: 'Source Sans Pro';
-    font-weight: 200;
-    font-size: 16px;
+    .font-source-sans(16px);    
 }
 
 h1,
@@ -18,12 +42,11 @@ h6 {
 
 h1,
 h2 {
-    font-family: 'Oswald';
-    font-weight: 'bold';
+    .font-oswald;
 
     header > & {
         font-size: 1.4em;
-        letter-spacing: -1px;        
+        letter-spacing: -1px;
         text-transform: uppercase;
         text-align: right;
         color: @primary-orange;
@@ -75,6 +98,23 @@ nav {
 }
 
 /** ### widgets */
-#loupe {
+#loupe {    
 
+    h4 {        
+        color: #fff;
+        .font-roboto-slab(1.2em);
+
+        @media screen and (min-width: 480px) {
+            font-size: 1.8em;
+        }
+    }
+
+    p {
+        color: @primary-orange;
+        font-size: 1em;
+
+        @media screen and (min-width: 480px) {
+            font-size: 1.2em;
+        }
+    }
 }
