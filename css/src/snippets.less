@@ -45,3 +45,11 @@
 .bodypadding (@_: true) when (@_) {    
     box-sizing: border-box;
 }
+
+/** ### convenience mixins */
+.transition (@_...) {
+    -webkit-transition: @arguments;
+    -moz-transition: @arguments;
+    -o-transition: @arguments;
+    transition: @arguments;
+}

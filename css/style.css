@@ -367,6 +367,7 @@ table {
 /** @snippet mixin :: adds the prescribed horizontal body padding
                       to whatever element this is called against 
                       */
+/** ### convenience mixins */
 /** ### fontface declarations */
 body {
   font: 300 16px 'Source Sans Pro', Arial, sans-serif;
@@ -499,6 +500,10 @@ body > header #loupe .slide {
   display: inline-block;
   vertical-align: text-top;
   white-space: normal;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
   padding: 0 20px;
   box-sizing: border-box;
 }
