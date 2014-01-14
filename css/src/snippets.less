@@ -39,11 +39,9 @@
 /** @snippet mixin :: adds the prescribed horizontal body padding
                       to whatever element this is called against 
                       */
-.bodypadding (true) {
-    // if (true) was passed as a parameter (or none was passed),
-    // modify box sizing to include the border box in width calculation
-    box-sizing: border-box;
+.bodypadding () {
+    padding: 0 @body-horizontal-padding;
 }
-.bodypadding (@_: true){
-    padding:0 @body-horizontal-padding;    
+.bodypadding (@_: true) when (@_) {    
+    box-sizing: border-box;
 }

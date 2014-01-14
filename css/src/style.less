@@ -51,7 +51,7 @@ body {
         & > nav {
 
             ul {                
-                margin: 5px 0;
+                margin: 5px 0 12px;
                 text-align: right;
                 .bodypadding;
 
@@ -69,14 +69,25 @@ body {
         // NOTE: we want the loupe to automatically resize
         //       vertically based on its content,
         //       instead of explicitly setting height here
-        #loupe {        
+        #loupe {                        
             background: @primary-gray;      
-            position:relative;
-            .bodypadding;            
+            position: relative;
+            overflow-x: hidden;
+            white-space: nowrap;            
             
-            .slide {                
-                position:relative;
-                
+            .slide {
+                width: 100%;
+                display: inline-block;
+                vertical-align: text-top;                
+                white-space:normal;                
+                .bodypadding;  
+
+                // we manipulate the loupe by
+                // adjusting the first slide's positioning
+                &:first-child {
+                    
+                }           
+
                 h4 {                
                     padding-top: 24px;
                     .suffix;

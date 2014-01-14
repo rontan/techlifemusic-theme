@@ -386,7 +386,7 @@ h2 {
 }
 header > h1,
 header > h2 {
-  font-size: 1.4em;
+  font-size: 1.45em;
   letter-spacing: -1px;
   text-transform: uppercase;
   text-align: right;
@@ -460,6 +460,7 @@ body > header h1,
 body > header h2 {
   margin-top: 5px;
   padding: 0 20px;
+  box-sizing: border-box;
 }
 body > header h1:before,
 body > header h2:before {
@@ -475,9 +476,10 @@ body > header h2:before {
   padding-right: .8em;
 }
 body > header > nav ul {
-  margin: 5px 0;
+  margin: 5px 0 12px;
   text-align: right;
   padding: 0 20px;
+  box-sizing: border-box;
 }
 body > header > nav ul li {
   display: inline-block;
@@ -489,10 +491,16 @@ body > header > nav ul li a {
 body > header #loupe {
   background: #212121;
   position: relative;
-  padding: 0 20px;
+  overflow-x: hidden;
+  white-space: nowrap;
 }
 body > header #loupe .slide {
-  position: relative;
+  width: 100%;
+  display: inline-block;
+  vertical-align: text-top;
+  white-space: normal;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 body > header #loupe .slide h4 {
   padding-top: 24px;
