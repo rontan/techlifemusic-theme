@@ -351,6 +351,18 @@ table {
 .prefix:before {
   content: "//";
 }
+/** @snippet class :: clearfix! */
+.cf {
+  zoom: 1;
+}
+.cf:after {
+  clear: both;
+}
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
 /** ### mixins */
 /** @snippet mixin :: adds the prescribed horizontal body padding
                       to whatever element this is called against 
