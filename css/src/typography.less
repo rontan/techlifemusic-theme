@@ -27,7 +27,7 @@
 }
 
 body {
-    .font-source-sans(16px);    
+    .font-source-sans(18pt);    
 }
 
 h1,
@@ -40,12 +40,31 @@ h6 {
     padding: 0;
 }
 
+// this theme's general link visual has no underline
+// :: just override this with another rule if ever
+a:link {    
+    text-decoration: none;
+}
+
+// leaders are the tags on sidebar sections and articles
+.leader {
+    text-transform: uppercase;
+    color: @primary-white;
+    .font-oswald(.7em);
+}
+
+// of course, monospaceds have to follow our convention
+pre,
+code {
+    .font-source-code;
+}
+
 h1,
 h2 {
     .font-oswald;
 
     header > & {
-        font-size: 1.45em;
+        font-size: 1em;
         letter-spacing: -1px;
         text-transform: uppercase;
         text-align: right;
@@ -72,12 +91,6 @@ h2 {
     }
 }
 
-a:link {
-    // this theme's general link visual has no underline
-    // :: just override this with another rule if ever
-    text-decoration: none;
-}
-
 /** ### navigation */
 nav {
     // the primary site nav bar
@@ -87,7 +100,7 @@ nav {
         ul {            
 
             li {
-                font-size: 1.1em;
+                font-size: .7em;
 
                 a {                    
                     color: @primary-orange;
@@ -101,20 +114,54 @@ nav {
 #loupe {    
 
     h4 {        
-        color: #fff;
-        .font-roboto-slab(1.2em);
+        color: @primary-white;
+        .font-roboto-slab(.8em);
 
         @media screen and (min-width: 480px) {
-            font-size: 1.8em;
+            font-size: 1.2em;
         }
     }
 
     p {
         color: @primary-orange;
-        font-size: 1em;
+        font-size: .72em;
 
         @media screen and (min-width: 480px) {
-            font-size: 1.2em;
+            font-size: .72em;
+        }
+    }
+}
+
+#content {
+    
+    // typography styles in actual blog entries
+    article {            
+
+        // the entry title head can either be h1 or h2,
+        // depending on what page we're viewing
+        h1,
+        h2 {                        
+            font-size: 1.4em;
+            line-height: 1.3;
+
+            @media screen and (min-width: 480px) {
+                font-size:1.8em;
+                line-height: 1.2;
+            }
+        }
+
+        // generally is the date when the entry was published
+        & > time {
+            color: @secondary-gray;
+            .font-roboto-slab(.72em);
+        }
+
+        // inline code snippets have a subtle background applied to them
+        // so that they are easily spotted within the main text
+        code {
+            padding: 0 .2em;
+            display: inline-block;            
+            background: @tertiary-gray;
         }
     }
 }

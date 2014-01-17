@@ -370,7 +370,7 @@ table {
 /** ### convenience mixins */
 /** ### fontface declarations */
 body {
-  font: 300 16px 'Source Sans Pro', Arial, sans-serif;
+  font: 300 18pt 'Source Sans Pro', Arial, sans-serif;
 }
 h1,
 h2,
@@ -381,13 +381,25 @@ h6 {
   margin: 0;
   padding: 0;
 }
+a:link {
+  text-decoration: none;
+}
+.leader {
+  text-transform: uppercase;
+  color: #ffffff;
+  font: 700 0.7em 'Oswald', Calibri, Arial, sans-serif;
+}
+pre,
+code {
+  font: 300 1em 'Source Code Pro', Consolas, 'Courier New', monospace;
+}
 h1,
 h2 {
   font: 700 1em 'Oswald', Calibri, Arial, sans-serif;
 }
 header > h1,
 header > h2 {
-  font-size: 1.45em;
+  font-size: 1em;
   letter-spacing: -1px;
   text-transform: uppercase;
   text-align: right;
@@ -409,37 +421,55 @@ header > h1 span:nth-child(3),
 header > h2 span:nth-child(3) {
   color: #5e5e5e;
 }
-a:link {
-  text-decoration: none;
-}
 /** ### navigation */
 header > nav {
   text-transform: uppercase;
 }
 header > nav ul li {
-  font-size: 1.1em;
+  font-size: .7em;
 }
 header > nav ul li a {
   color: #ff6432;
 }
 /** ### widgets */
 #loupe h4 {
-  color: #fff;
-  font: 300 1.2em 'Roboto Slab', sans-serif;
+  color: #ffffff;
+  font: 300 0.8em 'Roboto Slab', sans-serif;
 }
 @media screen and (min-width: 480px) {
   #loupe h4 {
-    font-size: 1.8em;
+    font-size: 1.2em;
   }
 }
 #loupe p {
   color: #ff6432;
-  font-size: 1em;
+  font-size: .72em;
 }
 @media screen and (min-width: 480px) {
   #loupe p {
-    font-size: 1.2em;
+    font-size: .72em;
   }
+}
+#content article h1,
+#content article h2 {
+  font-size: 1.4em;
+  line-height: 1.3;
+}
+@media screen and (min-width: 480px) {
+  #content article h1,
+  #content article h2 {
+    font-size: 1.8em;
+    line-height: 1.2;
+  }
+}
+#content article > time {
+  color: #acacac;
+  font: 300 0.72em 'Roboto Slab', sans-serif;
+}
+#content article code {
+  padding: 0 .2em;
+  display: inline-block;
+  background: #e6e6e6;
 }
 /** ### base styling */
 html,
@@ -451,6 +481,21 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+.leader {
+  display: inline-block;
+  width: 220px;
+  max-width: 60vw;
+  padding: 1px 0;
+  padding-left: 4px;
+  background: #212121;
+  border-left: 8px solid #ff6432;
+}
+.leader:before {
+  content: "//";
+}
+.leader:before {
+  padding-right: .4em;
 }
 /** ### sectional styling */
 body {
@@ -477,7 +522,7 @@ body > header h2:before {
   padding-right: .8em;
 }
 body > header > nav ul {
-  margin: 5px 0 12px;
+  margin: 0px 0 12px;
   text-align: right;
   padding: 0 20px;
   box-sizing: border-box;
@@ -486,16 +531,16 @@ body > header > nav ul li {
   display: inline-block;
 }
 body > header > nav ul li a {
-  padding: 0 .3em;
+  padding: 0 .2em;
   display: inline-block;
 }
-body > header #loupe {
+#loupe {
   background: #212121;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
   white-space: nowrap;
 }
-body > header #loupe .slide {
+#loupe .slide {
   width: 100%;
   display: inline-block;
   vertical-align: text-top;
@@ -507,13 +552,35 @@ body > header #loupe .slide {
   padding: 0 20px;
   box-sizing: border-box;
 }
-body > header #loupe .slide h4 {
+#loupe .slide h4 {
   padding-top: 24px;
 }
-body > header #loupe .slide h4:after {
+#loupe .slide h4:after {
   content: "_";
   color: #ff6432;
 }
-body > header #loupe .slide p {
+#loupe .slide p {
+  margin-top: .4em;
   padding-bottom: 6px;
+}
+#content {
+  margin-top: 1em;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+#content article {
+  line-height: 1.5;
+}
+#content article h1,
+#content article h2 {
+  margin-top: .1em;
+}
+#content article h1:after,
+#content article h2:after {
+  content: "_";
+  color: #ff6432;
+}
+#content article > time {
+  display: inline-block;
+  margin: .8em 0 0;
 }
