@@ -40,7 +40,8 @@
                       to whatever element this is called against 
                       */
 .bodypadding () {
-    padding: 0 @body-horizontal-padding;
+    padding-left: @body-horizontal-padding;
+    padding-right: @body-horizontal-padding;
 }
 .bodypadding (@_: true) when (@_) {    
     box-sizing: border-box;

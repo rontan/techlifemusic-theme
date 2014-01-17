@@ -62,30 +62,37 @@ code {
 h1,
 h2 {
     .font-oswald;
+}
 
-    header > & {
-        font-size: 1em;
-        letter-spacing: -1px;
-        text-transform: uppercase;
-        text-align: right;
-        color: @primary-orange;
+body {
 
-        &:before {                                    
-            color: @secondary-gray;
-        }
+    & > header {
 
-        @header-color: @primary-gray;
-        @header-gradient-step: 12%;
+        h1,
+        h2 {
+            font-size: 1em;
+            letter-spacing: -1px;
+            text-transform: uppercase;
+            text-align: right;
+            color: @primary-orange;
 
-        span {
-            color: @header-color;
-
-            &:nth-child(2) {
-                color: lighten(@header-color, @header-gradient-step);
+            &:before {                                    
+                color: @secondary-gray;
             }
 
-            &:nth-child(3) {
-                color: lighten(lighten(@header-color, @header-gradient-step), @header-gradient-step);
+            @header-color: @primary-gray;
+            @header-gradient-step: 12%;
+
+            span {
+                color: @header-color;
+
+                &:nth-child(2) {
+                    color: lighten(@header-color, @header-gradient-step);
+                }
+
+                &:nth-child(3) {
+                    color: lighten(lighten(@header-color, @header-gradient-step), @header-gradient-step);
+                }
             }
         }
     }
@@ -162,6 +169,10 @@ nav {
             padding: 0 .2em;
             display: inline-block;            
             background: @tertiary-gray;
+        }
+
+        pre {
+            font-size: .6em;
         }
     }
 }

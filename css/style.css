@@ -397,28 +397,28 @@ h1,
 h2 {
   font: 700 1em 'Oswald', Calibri, Arial, sans-serif;
 }
-header > h1,
-header > h2 {
+body > header h1,
+body > header h2 {
   font-size: 1em;
   letter-spacing: -1px;
   text-transform: uppercase;
   text-align: right;
   color: #ff6432;
 }
-header > h1:before,
-header > h2:before {
+body > header h1:before,
+body > header h2:before {
   color: #acacac;
 }
-header > h1 span,
-header > h2 span {
+body > header h1 span,
+body > header h2 span {
   color: #212121;
 }
-header > h1 span:nth-child(2),
-header > h2 span:nth-child(2) {
+body > header h1 span:nth-child(2),
+body > header h2 span:nth-child(2) {
   color: #404040;
 }
-header > h1 span:nth-child(3),
-header > h2 span:nth-child(3) {
+body > header h1 span:nth-child(3),
+body > header h2 span:nth-child(3) {
   color: #5e5e5e;
 }
 /** ### navigation */
@@ -471,6 +471,9 @@ header > nav ul li a {
   display: inline-block;
   background: #e6e6e6;
 }
+#content article pre {
+  font-size: .6em;
+}
 /** ### base styling */
 html,
 body {
@@ -505,7 +508,8 @@ body {
 body > header h1,
 body > header h2 {
   margin-top: 5px;
-  padding: 0 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   box-sizing: border-box;
 }
 body > header h1:before,
@@ -524,7 +528,8 @@ body > header h2:before {
 body > header > nav ul {
   margin: 0px 0 12px;
   text-align: right;
-  padding: 0 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   box-sizing: border-box;
 }
 body > header > nav ul li {
@@ -549,7 +554,8 @@ body > header > nav ul li a {
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
-  padding: 0 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   box-sizing: border-box;
 }
 #loupe .slide h4 {
@@ -565,22 +571,39 @@ body > header > nav ul li a {
 }
 #content {
   margin-top: 1em;
-  padding: 0 20px;
-  box-sizing: border-box;
 }
 #content article {
   line-height: 1.5;
 }
-#content article h1,
-#content article h2 {
+#content article header {
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+#content article header h1,
+#content article header h2 {
   margin-top: .1em;
 }
-#content article h1:after,
-#content article h2:after {
+#content article header h1:after,
+#content article header h2:after {
   content: "_";
   color: #ff6432;
 }
-#content article > time {
+#content article header > time {
   display: inline-block;
   margin: .8em 0 0;
+}
+#content article p {
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+#content article pre {
+  background: #e6e6e6;
+  padding: .6em 0;
+  overflow-x: auto;
+  white-space: pre;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
 }

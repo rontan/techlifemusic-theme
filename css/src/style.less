@@ -117,22 +117,38 @@ body {
 }
 
 #content {
-    margin-top: 1em;
-    .bodypadding;
+    margin-top: 1em;    
 
     article {
 
         line-height: 1.5;
 
-        h1,
-        h2 {
-            margin-top: .1em;
-            .suffix;
+        header {
+
+            .bodypadding;
+
+            h1,
+            h2 {
+                margin-top: .1em;                
+                .suffix;
+            }
+
+            & > time {
+                display: inline-block;
+                margin: .8em 0 0;
+            }
+        }        
+
+        p {
+            .bodypadding;
         }
 
-        & > time {
-            display: inline-block;
-            margin: .8em 0 0;
+        pre {
+            background: @tertiary-gray;
+            padding: .6em 0;
+            overflow-x: auto;
+            white-space: pre;
+            .bodypadding;            
         }
     }
 }
