@@ -45,6 +45,7 @@ public class AssetController : Controller {
         return View(model);
     }
 }</pre>
+        <p>With all that said and done though, I believe that this is the way to correctly use views in an MVC framework, and that Visual Studio should perhaps allows for better leniency for use cases such as this. I’d love to hear your ideas on the topic though.</p>
     </article>    
 </section>
 
