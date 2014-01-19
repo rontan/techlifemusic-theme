@@ -467,12 +467,16 @@ header > nav ul li a {
   font: 300 0.72em 'Roboto Slab', sans-serif;
 }
 #content article code {
-  padding: 0 .2em;
   display: inline-block;
   background: #e6e6e6;
+  padding: 0 .2em;
 }
 #content article pre {
   font-size: .6em;
+}
+#content article pre > code {
+  padding: 0;
+  display: inline;
 }
 /** ### base styling */
 html,
@@ -575,7 +579,9 @@ body > header > nav ul li a {
 #content article {
   line-height: 1.5;
 }
-#content article header {
+#content article header,
+#content article p,
+#content article pre {
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
@@ -593,17 +599,10 @@ body > header > nav ul li a {
   display: inline-block;
   margin: .8em 0 0;
 }
-#content article p {
-  padding-left: 20px;
-  padding-right: 20px;
-  box-sizing: border-box;
-}
 #content article pre {
   background: #e6e6e6;
-  padding: .6em 0;
+  padding-top: .6em;
+  padding-bottom: .6em;
   overflow-x: auto;
   white-space: pre;
-  padding-left: 20px;
-  padding-right: 20px;
-  box-sizing: border-box;
 }

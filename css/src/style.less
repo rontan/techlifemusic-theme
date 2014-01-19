@@ -123,9 +123,13 @@ body {
 
         line-height: 1.5;
 
-        header {
+        header,
+        p,
+        pre {
+            .bodypadding;            
+        }
 
-            .bodypadding;
+        header {
 
             h1,
             h2 {
@@ -140,15 +144,15 @@ body {
         }        
 
         p {
-            .bodypadding;
+            // TODO            
         }
 
         pre {
             background: @tertiary-gray;
-            padding: .6em 0;
+            padding-top: .6em;
+            padding-bottom: .6em;
             overflow-x: auto;
-            white-space: pre;
-            .bodypadding;            
+            white-space: pre;            
         }
     }
 }

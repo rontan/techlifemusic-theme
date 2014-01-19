@@ -145,7 +145,7 @@ nav {
     article {            
 
         header {
-            
+
             // the entry title head can either be h1 or h2,
             // depending on what page we're viewing
             h1,
@@ -169,13 +169,19 @@ nav {
         // inline code snippets have a subtle background applied to them
         // so that they are easily spotted within the main text
         code {
-            padding: 0 .2em;
             display: inline-block;            
             background: @tertiary-gray;
+            padding: 0 .2em;
         }
 
         pre {
             font-size: .6em;
+
+            & > code {
+                // neutralize the styles set above
+                padding: 0;
+                display: inline;
+            }
         }
     }
 }
