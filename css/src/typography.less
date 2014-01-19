@@ -144,23 +144,26 @@ nav {
     // typography styles in actual blog entries
     article {            
 
-        // the entry title head can either be h1 or h2,
-        // depending on what page we're viewing
-        h1,
-        h2 {                        
-            font-size: 1.4em;
-            line-height: 1.3;
+        header {
+            
+            // the entry title head can either be h1 or h2,
+            // depending on what page we're viewing
+            h1,
+            h2 {                        
+                font-size: 1.4em;
+                line-height: 1.3;
 
-            @media screen and (min-width: 480px) {
-                font-size:1.8em;
-                line-height: 1.2;
+                @media screen and (min-width: 480px) {
+                    font-size:1.8em;
+                    line-height: 1.2;
+                }
             }
-        }
 
-        // generally is the date when the entry was published
-        & > time {
-            color: @secondary-gray;
-            .font-roboto-slab(.72em);
+            // generally is the date when the entry was published
+            & > time {
+                color: @secondary-gray;
+                .font-roboto-slab(.72em);
+            }
         }
 
         // inline code snippets have a subtle background applied to them
