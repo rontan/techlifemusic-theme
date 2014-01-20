@@ -59,7 +59,26 @@
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, atque beatae sit molestiae laborum et enim laboriosam odio suscipit ipsam ea modi optio ab sapiente expedita. Fugiat, blanditiis, voluptatibus ex quia mollitia cum nulla maxime a eius fuga nemo rerum unde rem sint id eum laudantium sunt et nobis odit?</p>
 
-        </article>    
+            <ul>
+                <li>List item 1</li>
+                <li>List item 2</li>
+                <li>
+                    This is a nested list.
+                    <ul>
+                        <li>Sub-list item 1</li>
+                        <li>Sub-list item 2</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, minus?</p>
+
+            <blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, at beatae illo tempore nostrum quae sit.</p>
+                <p><span>Abraham Lincoln (<a href="#">some link</a>)</span></p>
+            </blockquote>
+
+        </article>
     </main>
 
     <section id="sidebar">
