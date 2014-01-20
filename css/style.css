@@ -370,7 +370,7 @@ table {
 /** ### convenience mixins */
 /** ### fontface declarations */
 body {
-  font: 300 18pt 'Source Sans Pro', Arial, sans-serif;
+  font: 300 16pt 'Source Sans Pro', Arial, sans-serif;
 }
 h1,
 h2,

@@ -25,9 +25,9 @@
     </section>
 </header>
 
-<section id="content">
+<section>
 
-    <main>
+    <main id="content" role="main">
         
         <article>
             <header>
@@ -48,9 +48,8 @@
 }
 </code></pre>
             <p>With all that said and done though, I believe that this is the way to correctly use views in an MVC framework, and that Visual Studio should perhaps allows for better leniency for use cases such as this. I’d love to hear your ideas on the topic though.</p>
-            </article>    
-        </main>
-    </section>
+        </article>    
+    </main>
 
     <section id="sidebar">
 
@@ -61,6 +60,7 @@
         </div>
 
     </section>
-</main>
+
+</section>
 
 <?php get_footer(); ?>
