@@ -62,8 +62,7 @@
             <ul>
                 <li>List item 1</li>
                 <li>List item 2</li>
-                <li>
-                    This is a nested list.
+                <li>This is a nested list.
                     <ul>
                         <li>Sub-list item 1</li>
                         <li>Sub-list item 2</li>

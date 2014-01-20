@@ -626,6 +626,30 @@ body > header > nav ul li a {
 #content article img {
   max-width: 100%;
 }
+#content article ul {
+  margin-top: .4em;
+  list-style-type: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+#content article ul li {
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+#content article ul li:before {
+  content: "";
+  display: inline-block;
+  margin-top: .4em;
+  width: .35em;
+  height: .35em;
+  background: #ff6432;
+  vertical-align: text-top;
+  position: absolute;
+  left: 0;
+}
 #content article blockquote {
   margin: 0;
   padding: 0;
