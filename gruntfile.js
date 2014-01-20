@@ -78,6 +78,28 @@ module.exports = (function (contribs) {
                         livereload : true
                     }
                 }
+            },
+
+            // @module compress 
+            compress : {
+                theme : {
+                    options : {
+                        archive : './theme-deploy.zip',
+                        mode : 'zip'
+                    },
+                    files : [
+                        { src : 'css/**/*.min.css' },
+                        { src : 'js/**/*.min.js' },
+                        { src : 'lib/**/*.php' },
+                        { src : 'lib/**/*.inc' },
+                        { src : '*.php' },
+                        { src : '*.inc' },
+                        { src : '*.txt'},
+                        { src : '*.xml' },
+                        { src : 'LICENSE' },
+                        { src : 'style.css' }
+                    ]
+                }
             }
 
         });
@@ -96,7 +118,7 @@ module.exports = (function (contribs) {
         grunt.registerTask('compile-scripts-production', ['compile-scripts', 'uglify']);
         grunt.registerTask('compile-styles-production', ['less:production']);
 
-        grunt.registerTask('package', ['compile-scripts-production', 'compile-styles-production']);
+        grunt.registerTask('package', ['compile-scripts-production', 'compile-styles-production', 'compress']);
     };
 
 })([
@@ -104,5 +126,6 @@ module.exports = (function (contribs) {
     'grunt-contrib-uglify',
     'grunt-contrib-less',
     'grunt-contrib-watch',
-    'grunt-contrib-jshint'
+    'grunt-contrib-jshint',
+    'grunt-contrib-compress'
 ]);
