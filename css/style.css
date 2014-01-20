@@ -488,38 +488,12 @@ header > nav ul li a {
   color: #878787;
 }
 #content article blockquote {
-  margin: 0;
-  padding: 0;
   color: #a1a1a1;
   font: 300 0.8em 'Roboto Slab', sans-serif;
-  padding-left: 20px;
-  padding-right: 20px;
-  box-sizing: border-box;
 }
 #content article blockquote p span {
   font-size: .72em;
   color: #212121;
-  display: inline-block;
-  padding-left: .6em;
-}
-#content article blockquote p span:before {
-  content: "";
-  display: inline-block;
-  margin-left: -0.6em;
-  margin-right: .6em;
-  width: 6px;
-  height: 6px;
-  background-color: #ff6432;
-  vertical-align: super;
-}
-#content article blockquote:before,
-#content article blockquote:after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  margin: .6em 0;
-  background: #e6e6e6;
 }
 /** ### base styling */
 html,
@@ -651,4 +625,34 @@ body > header > nav ul li a {
 }
 #content article img {
   max-width: 100%;
+}
+#content article blockquote {
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+#content article blockquote p span {
+  display: inline-block;
+  padding-left: .6em;
+}
+#content article blockquote p span:before {
+  content: "";
+  display: inline-block;
+  margin-left: -0.6em;
+  margin-right: .6em;
+  width: 6px;
+  height: 6px;
+  background-color: #ff6432;
+  vertical-align: super;
+}
+#content article blockquote:before,
+#content article blockquote:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin: .6em 0;
+  background: #e6e6e6;
 }
