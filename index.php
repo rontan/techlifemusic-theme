@@ -48,6 +48,17 @@
 }
 </code></pre>
             <p>With all that said and done though, I believe that this is the way to correctly use views in an MVC framework, and that Visual Studio should perhaps allows for better leniency for use cases such as this. I’d love to hear your ideas on the topic though.</p>
+
+            <!-- standard image markup with a link -->
+            <div class="wp-caption">
+                <a href="#">
+                    <img src="http://upload.wikimedia.org/wikipedia/commons/6/66/Goats_in_Batanes.png" />
+                </a>
+                <p class="wp-caption-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit iste et maxime exercitationem magni sed mollitia cum voluptas quo voluptate!</p>
+            </div>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, atque beatae sit molestiae laborum et enim laboriosam odio suscipit ipsam ea modi optio ab sapiente expedita. Fugiat, blanditiis, voluptatibus ex quia mollitia cum nulla maxime a eius fuga nemo rerum unde rem sint id eum laudantium sunt et nobis odit?</p>
+
         </article>    
     </main>
 

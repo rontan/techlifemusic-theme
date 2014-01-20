@@ -478,6 +478,10 @@ header > nav ul li a {
   padding: 0;
   display: inline;
 }
+#content article div.wp-caption p.wp-caption-text {
+  font: 300 0.5em 'Roboto Slab', sans-serif;
+  color: #acacac;
+}
 /** ### base styling */
 html,
 body {
@@ -605,4 +609,7 @@ body > header > nav ul li a {
   padding-bottom: .6em;
   overflow-x: auto;
   white-space: pre;
+}
+#content article img {
+  max-width: 100%;
 }
