@@ -96,11 +96,24 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, minus?</p>
 
             <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, at beatae illo tempore nostrum quae sit.</p>
+                <p>This is a standard blockquote. It should be centered on the page, with no elements to its left or right.</p>
                 <p><span>Abraham Lincoln (<a href="#">some link</a>)</span></p>
             </blockquote>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, recusandae cupiditate aliquam quae voluptate cumque veniam et nostrum numquam doloribus animi laudantium iste officia dolor?</p>
+            <blockquote class="alignleft">
+                <p>This is a pull quote. On larger screens, this should be flushed towards the left.</p>
+                <p><span>Leeroy Jenkins (<a href="#">some link</a>)</span></p>
+            </blockquote>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, voluptas, maxime accusamus accusantium voluptatum sunt doloribus ut eaque consectetur beatae alias natus tenetur quas saepe fuga dolorem voluptatibus iure vitae magnam minima placeat recusandae non quisquam omnis rerum nihil hic nesciunt aspernatur delectus quo optio eveniet dolore neque aut ipsum ex veniam error dicta at asperiores adipisci unde. Animi, quae placeat repudiandae voluptatibus beatae consequuntur unde sapiente autem dolore explicabo corrupti id saepe repellendus deserunt illum nam nemo sunt iure architecto temporibus suscipit enim illo nobis magni vero soluta quos obcaecati! Beatae adipisci delectus consequuntur dolore rem ipsa molestias tempore!</p>
+            <blockquote class="alignright">
+                <p>This is a pull quote. On larger screens, this should be flushed towards the right.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, tenetur nobis dolorum.</p>
+                <p><span>Magtataho sa kanto, January 2014 (<a href="#">some link</a>)</span></p>
+            </blockquote>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates aut neque modi at impedit unde voluptatibus corporis doloribus alias dolor! Repellat, necessitatibus, quod, et laboriosam nihil mollitia sequi labore placeat reprehenderit assumenda excepturi recusandae ea vero libero incidunt. Placeat, quo, repudiandae, cum architecto hic necessitatibus laudantium labore nisi optio ex error incidunt aliquam aspernatur facere commodi tempora porro reprehenderit quos voluptates mollitia voluptate culpa voluptatem odit? Quia, dolorem, amet similique quo nihil incidunt eaque eligendi id iste rerum itaque necessitatibus exercitationem quos libero molestiae! Id, dolores, labore dicta quis natus tenetur fugit ipsum ipsa cumque sapiente nihil beatae distinctio repellendus excepturi nostrum pariatur possimus cupiditate quam aliquid consequatur? Voluptatem, autem, expedita, nobis aspernatur quam pariatur omnis ducimus est quibusdam ratione reiciendis animi dolor impedit ipsam possimus numquam ab explicabo inventore quo eveniet quos eum debitis velit quas error a laborum dicta id cumque. Aliquam sed ipsa at explicabo in porro.</p>
 
             <h3>Headers tests</h3>
 
