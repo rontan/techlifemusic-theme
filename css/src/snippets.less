@@ -1,4 +1,5 @@
 @import 'palette';
+@import 'animations';
 
 /** ### classes */
 
@@ -7,13 +8,15 @@
     &:after {
         content: "_";
         color: @primary-orange;
+
+        .animation(blink 1.5s linear infinite alternate);
     }
 }
 
 /** @snippet class :: adds a double-slash leader */
 .prefix {
     &:before {
-        content: "//";
+        content: "//";        
     }
 }
 
@@ -53,4 +56,9 @@
     -moz-transition: @arguments;
     -o-transition: @arguments;
     transition: @arguments;
+}
+
+.animation (@_...) {
+    -webkit-animation: @arguments;
+    animation: @arguments;
 }

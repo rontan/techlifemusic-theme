@@ -40,9 +40,7 @@
 
                 <header>
                     <span class="leader">latest</span>
-                    <h2 name="<?php the_title(); ?>">
-                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                    </h2>
+                    <h2 name="<?php the_title(); ?>"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                     <time datetime="<?php the_time(DateTime::ISO8601); ?>"><?php the_time(get_option('date_format')); ?></time>
                 </header>
 

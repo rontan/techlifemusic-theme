@@ -63,6 +63,16 @@ code {
 h1,
 h2 {
     .font-oswald;
+
+    a:link {
+        color: @primary-gray;
+
+        .transition(color .2s linear);
+
+        &:hover {
+            color: @primary-orange;
+        }
+    }
 }
 
 body {
