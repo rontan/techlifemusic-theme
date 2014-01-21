@@ -61,13 +61,13 @@
 
             <ul>
                 <li>List item 1</li>
-                <li>List item 2</li>
                 <li>This is a nested list.
                     <ul>
                         <li>Sub-list item 1</li>
                         <li>Sub-list item 2</li>
                     </ul>
                 </li>
+                <li>List item 2</li>                
             </ul>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, minus?</p>
@@ -76,6 +76,25 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, at beatae illo tempore nostrum quae sit.</p>
                 <p><span>Abraham Lincoln (<a href="#">some link</a>)</span></p>
             </blockquote>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit reprehenderit fugiat labore vero itaque reiciendis sed soluta sequi.</p>
+
+            <ol>
+                <li>List item 1</li>
+                <li>This is a nested list.
+                    <ol>
+                        <li>Sub-list item 1</li>
+                        <li>Sub-list item 2</li>
+                        <li>Another nested list
+                            <ol>
+                                <li>Sub sub list item</li>
+                                <li>Whoa nelly!</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+                <li>List item 2</li>
+            </ol>            
 
         </article>
     </main>

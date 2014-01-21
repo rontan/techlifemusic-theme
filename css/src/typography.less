@@ -197,9 +197,17 @@ nav {
 
         }
 
+        ol, 
         ul {
             font-size: .8em;
             color: lighten(@primary-gray, 40%);
+
+            // stop the font size from getting smaller
+            // from the 3rd level onward
+            & ul ul,
+            & ol ol {
+                font-size: 1em;
+            }
         }
         
         blockquote {            

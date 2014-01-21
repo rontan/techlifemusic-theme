@@ -81,6 +81,12 @@ body {
             }
         }        
     }
+
+    // this should be the primary container for the page,
+    // where the main content areas are displayed.
+    & > section {
+        margin-bottom: 1.2em;
+    }
 }
 
 // NOTE: we want the loupe to automatically resize
@@ -165,14 +171,45 @@ body {
 
         }
 
+        ol,
         ul {
-            margin-top: .4em;
-            list-style-type: none;  
-            .bodypadding;          
+            margin: .4em 0;
+            list-style: none;
+            .bodypadding;
 
-            li {                
-                position:relative;
+            li {
+                position: relative;
                 .bodypadding;
+                padding-right: 0;
+            }
+
+            // remove the tiered padding on the right
+            & ol,
+            & ul {
+                padding-right: 0;
+            }
+        }
+
+        ol {
+            counter-reset: li;
+            li {
+                // style the numbers before ordered lists
+                &:before {
+                    content: counter(li);
+                    counter-increment: li;
+
+                    display: inline-block;                    
+                    position: absolute;                    
+                    left: 0;
+                    .font-roboto-slab(.8em);
+                    color: @primary-orange;
+                }
+            }
+        }
+
+        ul {             
+
+            li {                                
 
                 &:before {
                     content: "";

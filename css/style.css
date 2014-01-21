@@ -483,9 +483,16 @@ header > nav ul li a {
   font: 300 0.5em 'Roboto Slab', sans-serif;
   color: #acacac;
 }
+#content article ol,
 #content article ul {
   font-size: .8em;
   color: #878787;
+}
+#content article ol ul ul,
+#content article ul ul ul,
+#content article ol ol ol,
+#content article ul ol ol {
+  font-size: 1em;
 }
 #content article blockquote {
   color: #a1a1a1;
@@ -560,6 +567,9 @@ body > header > nav ul li a {
   padding: 0 .2em;
   display: inline-block;
 }
+body > section {
+  margin-bottom: 1.2em;
+}
 #loupe {
   background: #212121;
   position: relative;
@@ -626,18 +636,39 @@ body > header > nav ul li a {
 #content article img {
   max-width: 100%;
 }
+#content article ol,
 #content article ul {
-  margin-top: .4em;
-  list-style-type: none;
+  margin: .4em 0;
+  list-style: none;
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
 }
+#content article ol li,
 #content article ul li {
   position: relative;
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
+  padding-right: 0;
+}
+#content article ol ol,
+#content article ul ol,
+#content article ol ul,
+#content article ul ul {
+  padding-right: 0;
+}
+#content article ol {
+  counter-reset: li;
+}
+#content article ol li:before {
+  content: counter(li);
+  counter-increment: li;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  font: 300 0.8em 'Roboto Slab', sans-serif;
+  color: #ff6432;
 }
 #content article ul li:before {
   content: "";
