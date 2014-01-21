@@ -29,6 +29,33 @@
 
     <main id="content" role="main">
         
+        <?php 
+            // wordpress loop
+            if (have_posts()): 
+                while(have_posts()):
+                    the_post();
+                ?>
+
+            <article>
+
+                <header>
+                    <span class="leader">latest</span>
+                    <h2 name="<?php the_title(); ?>">
+                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                    </h2>
+                    <time datetime="<?php the_time(DateTime::ISO8601); ?>"><?php the_time(get_option('date_format')); ?></time>
+                </header>
+
+                <section><?php the_content(); ?></section>
+
+            </article>
+
+        <?php
+                endwhile;
+            endif;
+            ?>
+
+        <?php /*
         <article>
             <header>
                 <span class="leader">latest</span>
@@ -135,6 +162,7 @@
             <p>This paragraph should have an supplementary text attributed to it. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, at, iusto, quo fugiat aspernatur porro libero omnis vitae rerum natus asperiores vero similique ipsum eum!</p>
 
         </article>
+        */ ?>
     </main>
 
     <section id="sidebar">

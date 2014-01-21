@@ -667,6 +667,12 @@ body > section {
   white-space: pre;
 }
 #content article img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+#content article div.wp-caption {
   max-width: 100%;
 }
 #content article ol,
