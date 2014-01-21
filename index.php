@@ -46,6 +46,10 @@
 
                 <section><?php the_content(); ?></section>
 
+                <footer></footer>
+
+                <?php comments_template(); ?>
+
             </article>
 
         <?php
