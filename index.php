@@ -70,12 +70,7 @@
                 <li>List item 2</li>                
             </ul>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, minus?</p>
-
-            <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, at beatae illo tempore nostrum quae sit.</p>
-                <p><span>Abraham Lincoln (<a href="#">some link</a>)</span></p>
-            </blockquote>
+            
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit reprehenderit fugiat labore vero itaque reiciendis sed soluta sequi.</p>
 
@@ -94,7 +89,31 @@
                     </ol>
                 </li>
                 <li>List item 2</li>
-            </ol>            
+            </ol>   
+
+            <h3>Quotes tests</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, minus?</p>
+
+            <blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, at beatae illo tempore nostrum quae sit.</p>
+                <p><span>Abraham Lincoln (<a href="#">some link</a>)</span></p>
+            </blockquote>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, recusandae cupiditate aliquam quae voluptate cumque veniam et nostrum numquam doloribus animi laudantium iste officia dolor?</p>
+
+            <h3>Headers tests</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, pariatur!</p>
+
+            <h4>This is a heading 4</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, tempore, blanditiis, ab itaque ratione nisi doloribus aliquid minus explicabo saepe consequatur maiores illo mollitia est.</p>
+
+            <h5>This is a heading 5</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, veniam.</p>
+
+            <h6>This is a heading 6</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, commodi vitae nam officia provident ex vel ut fugit non cupiditate delectus fugiat soluta cum quae tenetur dolor maxime at magni dignissimos voluptates enim debitis voluptatem.</p>
 
         </article>
     </main>

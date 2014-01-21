@@ -85,7 +85,7 @@ body {
     // this should be the primary container for the page,
     // where the main content areas are displayed.
     & > section {
-        margin-bottom: 1.2em;
+        padding-bottom: 2.6em;
     }
 }
 
@@ -130,9 +130,23 @@ body {
         line-height: 1.5;
 
         header,
+        h3,
+        h4,
+        h5,
+        h6,
         p,
-        pre {
+        pre,
+        ol,
+        ul,
+        li {
             .bodypadding;            
+        }
+
+        h3,
+        h4,
+        h5,
+        h6 {            
+            margin: 1.2em 0 .6em;            
         }
 
         header {
@@ -174,12 +188,10 @@ body {
         ol,
         ul {
             margin: .4em 0;
-            list-style: none;
-            .bodypadding;
+            list-style: none;            
 
             li {
-                position: relative;
-                .bodypadding;
+                position: relative;                
                 padding-right: 0;
             }
 
