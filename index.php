@@ -128,6 +128,12 @@
             <h6>This is a heading 6</h6>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, commodi vitae nam officia provident ex vel ut fugit non cupiditate delectus fugiat soluta cum quae tenetur dolor maxime at magni dignissimos voluptates enim debitis voluptatem.</p>
 
+            <h3>Asides</h3>
+            <p>Asides are snippets of text that provide explanatory text or what supplementary information that the main text requires.</p>
+
+            <aside>This aside supplements the next paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, dicta?</aside>
+            <p>This paragraph should have an supplementary text attributed to it. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, at, iusto, quo fugiat aspernatur porro libero omnis vitae rerum natus asperiores vero similique ipsum eum!</p>
+
         </article>
     </main>
 

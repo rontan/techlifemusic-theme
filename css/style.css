@@ -519,6 +519,10 @@ header > nav ul li a {
   font-size: .72em;
   color: #212121;
 }
+#content article aside {
+  font-size: .8em;
+  color: #212121;
+}
 /** ### base styling */
 html,
 body {
@@ -734,4 +738,16 @@ body > section {
   height: 1px;
   margin: .6em 0;
   background: #e6e6e6;
+}
+#content article aside {
+  display: block;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-left: 5px solid #00b387;
+  background: #e6e6e6;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  padding-top: .6em;
+  padding-bottom: .6em;
 }
