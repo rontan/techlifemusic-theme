@@ -1,6 +1,7 @@
 @import 'normalize';
 @import 'snippets';
 @import 'typography';
+@import 'prism';
 
 /** ### base styling */
 
@@ -167,12 +168,15 @@ body {
             // TODO            
         }
 
-        pre {
-            background: @tertiary-gray;
+        pre {            
             padding-top: .6em;
             padding-bottom: .6em;
             overflow-x: auto;
             white-space: pre;            
+
+            code {
+                background:transparent;
+            }
         }
 
         img {
