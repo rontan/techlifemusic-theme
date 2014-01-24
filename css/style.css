@@ -708,6 +708,9 @@ nav ul {
 .leader:before {
   padding-right: .4em;
 }
+.sectional {
+  border-top: 1px solid #e6e6e6;
+}
 /** ### sectional styling */
 body {
   border-top: 5px solid #212121;

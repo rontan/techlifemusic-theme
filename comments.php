@@ -14,49 +14,33 @@ endif;
 if (post_password_required()):
 ?>
     <div class="">
-        <p class="nocomments">This post is password protected. Please log in to view comments.</p>
+        <p class="alert">This post is password protected. Please log in to view comments.</p>
     </div>
 <?php
     return; 
 endif;
-?>
 
-<?php // ### real start of the comment system 
-
-// want to modify the way comments look like?
-// this is where you modify that.
-require_once('/lib/techlifemusic_class_commentwalker.php');
-
-?>
-
-<?php 
-
+// ### real start of the comment system 
 $have_comments = have_comments();
 $comments_open = comments_open();
 
 ?>
 
-<h3>Comments</h3>
+<div id="comments" class="sectional">
 
-<?php 
+    <span class="leader">Comments</span>
 
-// ### comments list  ------------------------------
+    <?php 
 
-if (have_comments()):
+    // ### comments list  ------------------------------
+    if (have_comments()){
+        include('/lib/techlifemusic_commentslist.php');
+    }
+    
+    // ### comment form --------------------------------
+    if (comments_open()) {
+        include('/lib/techlifemusic_commentsform.php');
+    }    
+    ?>
 
-    $args = array(
-        'walker' => new CommentWalker()
-        );
-    wp_list_comments($args);
-?>
-
-<?php endif; // ------------------------------------ ?>
-
-
-
-<?php 
-// ### comment form --------------------------------
-if (comments_open()) :
-?>
-
-<?php endif; // ------------------------------------ ?>
+</div>
