@@ -48,7 +48,7 @@
 
                 <footer></footer>
 
-                <?php comments_template(); ?>
+                <?php comments_template('/comments.php', true); ?>
 
             </article>
 
