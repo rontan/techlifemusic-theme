@@ -382,6 +382,9 @@ table {
 body {
   font: 300 16pt 'Source Sans Pro', Arial, sans-serif;
 }
+.small {
+  font-size: .8em;
+}
 h1,
 h2,
 h3,
@@ -399,6 +402,9 @@ a:link {
   text-transform: uppercase;
   color: #ffffff;
   font: 700 0.7em 'Oswald', Calibri, Arial, sans-serif;
+}
+.alert {
+  font-size: 11.2pt;
 }
 pre,
 code {
@@ -711,6 +717,11 @@ nav ul {
 .sectional {
   border-top: 1px solid #e6e6e6;
 }
+.alert {
+  border: 1px solid #ffd0aa;
+  background-color: #fff2e7;
+  padding: 10px;
+}
 /** ### sectional styling */
 body {
   border-top: 5px solid #212121;
@@ -927,4 +938,105 @@ body > section {
   padding-top: .6em;
   padding-bottom: .6em;
 }
-/* */
+#content #comments {
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+#content #comments h5,
+#content #comments ul,
+#content #comments li,
+#content #comments p {
+  padding-right: 0;
+  padding-left: 0;
+}
+#content #comments ul li {
+  padding: .1em 0;
+}
+#content #comments ul li:before {
+  display: none;
+}
+#content #comments label {
+  display: none;
+}
+#content #comments input[type="text"],
+#content #comments input[type="email"],
+#content #comments input[type="url"] {
+  border: 1px solid #ebebeb;
+  background: #ebebeb;
+  padding: .3em .6em;
+  width: 80%;
+  color: #212121;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+#content #comments input[type="text"]:focus,
+#content #comments input[type="email"]:focus,
+#content #comments input[type="url"]:focus {
+  background: #ff6432;
+  color: #ffffff;
+  outline: 0;
+}
+#content #comments input[type="text"]:focus::-webkit-input-placeholder,
+#content #comments input[type="email"]:focus::-webkit-input-placeholder,
+#content #comments input[type="url"]:focus::-webkit-input-placeholder {
+  color: #ffb198;
+}
+#content #comments input[type="text"]:focus:-moz-placeholder,
+#content #comments input[type="email"]:focus:-moz-placeholder,
+#content #comments input[type="url"]:focus:-moz-placeholder {
+  color: #ffb198;
+}
+#content #comments input[type="text"]:focus::-moz-placeholder,
+#content #comments input[type="email"]:focus::-moz-placeholder,
+#content #comments input[type="url"]:focus::-moz-placeholder {
+  color: #ffb198;
+}
+#content #comments input[type="text"]:focus:-ms-input-placeholder,
+#content #comments input[type="email"]:focus:-ms-input-placeholder,
+#content #comments input[type="url"]:focus:-ms-input-placeholder {
+  color: #ffb198;
+}
+#content #comments textarea {
+  border: 1px solid #f3f3f3;
+  background: #f3f3f3;
+  width: 100%;
+  height: 6em;
+  padding: .4em;
+  box-sizing: border-box;
+  font-size: .8em;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+#content #comments textarea:focus {
+  outline: 0;
+  border-color: #ff6432;
+  background: transparent;
+}
+#content #comments input[type="button"],
+#content #comments input[type="submit"] {
+  background: #00b387;
+  color: #ffffff;
+  border: 0;
+  padding: .3em 1.2em;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+#content #comments input[type="button"]:hover,
+#content #comments input[type="submit"]:hover,
+#content #comments input[type="button"]:focus,
+#content #comments input[type="submit"]:focus {
+  outline: 0;
+  background: #00cc9a;
+}
+#content #comments-allowed-tags code {
+  font-size: .8em;
+  color: #acacac;
+  background: transparent;
+}

@@ -6,6 +6,8 @@
 @roboto-slab :      'Roboto Slab', sans-serif;
 @oswald :           'Oswald', Calibri, Arial, sans-serif;
 
+@base-font-size : 16pt;
+
 .font-config (@_...) {
     font: @arguments;
 }
@@ -27,7 +29,11 @@
 }
 
 body {
-    .font-source-sans(16pt);
+    .font-source-sans(@base-font-size);
+}
+
+.small {
+    font-size: .8em;
 }
 
 h1,
@@ -52,6 +58,16 @@ a:link {
     text-transform: uppercase;
     color: @primary-white;
     .font-oswald(.7em);
+}
+
+// alert boxes
+// ::   since em units *may* be unreliable for alert boxes
+//      (since they can be placed in a lot of different places)
+//      let's just define a static amount for it
+.alert {
+    // .7em equivalent
+    font-size: @base-font-size * 0.7;
+
 }
 
 // of course, monospaceds have to follow our convention

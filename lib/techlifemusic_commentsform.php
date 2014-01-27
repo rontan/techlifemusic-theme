@@ -40,11 +40,11 @@ $siteurl = get_option('siteurl');
                 </li>
                 <li>
                     <label for="email">Email</label>
-                    <input type="text" id="email" name="email" value="<?php echo esc_attr($comment_author); ?>" placeholder="Your email" tabindex="2" <?php if ($req) { echo "aria-required='true'"; } ?> />
+                    <input type="email" id="email" name="email" value="<?php echo esc_attr($comment_author); ?>" placeholder="Your email" tabindex="2" <?php if ($req) { echo "aria-required='true'"; } ?> />
                 </li>
                 <li>
                     <label for="url">Website</label>
-                    <input type="text" id="url" name="url" value="<?php echo esc_attr($comment_author); ?>" placeholder="Got a website?" tabindex="3" />
+                    <input type="url" id="url" name="url" value="<?php echo esc_attr($comment_author); ?>" placeholder="Got a website?" tabindex="3" />
                 </li>
             </ul>
 
@@ -53,11 +53,11 @@ $siteurl = get_option('siteurl');
         <p><textarea id="comment" name="comment" placeholder="Your comment here!" tabindex="4"></textarea></p>
         <p><input id="submit" name="submit" type="submit" tabindex="5" value="Submit" /></p>
 
-        <div class="alert">
-            <p id="allowed-tags" class="small"><strong>XHTML:</strong> You can use these tags: <code><?php echo allowed_tags(); ?></code></p>
+        <div id="comments-allowed-tags" class="alert">
+            <strong>XHTML:</strong> You can use these tags: <code><?php echo allowed_tags(); ?></code>
         </div>
 
-    </form>
+    </form> 
 
     <?php endif; ?>
 
