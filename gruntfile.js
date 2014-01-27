@@ -77,6 +77,15 @@ module.exports = (function (contribs) {
                         spawn : false,
                         livereload : true
                     }
+                },
+                php : {
+                    files : ['**/*.php', '**/*.inc'],
+                    tasks : [],
+                    options : {
+                        interrupt : true,
+                        spawn : false,
+                        livereload : true
+                    }
                 }
             },
 
