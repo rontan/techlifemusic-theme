@@ -953,6 +953,7 @@ body > section {
 #content #comments ul,
 #content #comments ol,
 #content #comments li,
+#content #comments h3,
 #content #comments p {
   padding-right: 0;
   padding-left: 0;
@@ -962,11 +963,12 @@ body > section {
 }
 #content #comments ul li,
 #content #comments ol li {
-  padding: .1em 0;
+  padding: .1em 0 0;
 }
 #content #comments ul li ul,
 #content #comments ol li ul {
-  padding-left: 30px;
+  padding-left: 20px;
+  border-left: 1px solid #e6e6e6;
 }
 #content #comments ul li:before,
 #content #comments ol li:before {
@@ -990,20 +992,26 @@ body > section {
 #content #comments .comment article header cite {
   display: inline;
   padding: .2em 0;
-  font: 300 1.4em 'Roboto Slab', sans-serif;
+  font: 300 1.1em 'Roboto Slab', sans-serif;
 }
 #content #comments .comment article header cite a:link {
   color: #212121;
+}
+#content #comments .comment article header time {
+  display: block;
+  font-size: .8em;
+  margin-top: 0;
 }
 #content #comments .comment article header time a:link {
   color: #acacac;
 }
 #content #comments .comment article > section {
   border: 1px solid #e6e6e6;
-  padding: 0 20px;
+  margin-top: 10px;
+  padding: 0 10px;
 }
 #content #comments .comment article .comment-reply-link {
-  padding: 0 20px;
+  margin: 0 20px;
 }
 #content #comments label {
   display: none;

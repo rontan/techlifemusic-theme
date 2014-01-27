@@ -8,6 +8,7 @@
         ul,
         ol,
         li,
+        h3,
         p {
             padding-right: 0;
             padding-left: 0;
@@ -20,10 +21,11 @@
         ul, ol {
 
             li {
-                padding: .1em 0;                
+                padding: .1em 0 0;                
 
                 ul {
-                    padding-left: 30px;
+                    padding-left: 20px;
+                    border-left:1px solid @tertiary-gray;
                 }            
 
                 // this should kill the numbering
@@ -53,14 +55,17 @@
                     cite {
                         display:inline;
                         padding: .2em 0;                        
-                        .font-roboto-slab(1.4em, 300);
+                        .font-roboto-slab(1.1em, 300);
 
                         a:link {
                             color: @primary-gray;
                         }
                     }
 
-                    time {                        
+                    time {
+                        display:block;                        
+                        font-size:.8em;
+                        margin-top:0;
 
                         a:link {
                             color: @secondary-gray;
@@ -71,11 +76,12 @@
                 // comment content
                 & > section {
                     border: 1px solid @tertiary-gray;
-                    padding: 0 20px;
+                    margin-top: 10px;
+                    padding: 0 10px;
                 }
 
                 .comment-reply-link {
-                    padding:0 20px;
+                    margin:0 20px;
                 }
             }
         }

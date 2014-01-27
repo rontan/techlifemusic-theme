@@ -28,7 +28,8 @@ $comments_open = comments_open();
 
 <div id="comments" class="sectional">
 
-    <span class="leader">Comments</span>
+    <!--<span class="leader">Comments</span>-->
+    <h3><?php comments_number('No Comments', '1 Comment', '% Comments') ?></h3>
 
     <?php 
 
