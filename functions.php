@@ -42,7 +42,39 @@ function techlifemusic_register_sidebars () {
 
 // ### commenting system
 function techlifemusic_comments ($comment, $args, $depth) {
-    // TODO
+    
+    $GLOBALS['comment'] = $comment;
+    $authoremail = get_comment_author_email();
+
+    ?>
+
+    <li <?php comment_class(); ?>>
+        <article id="comment-<?php comment_ID(); ?>">
+            <header>
+                <img src="" 
+                     data-responsive-image="http://www.gravatar.com/avatar/<?php ?>?s=38" 
+                     data-responsive-image-width="720"
+                     class="load-gravatar avatar avatar-32 photo" 
+                     />                
+                <cite><?php echo get_comment_author_link(); ?></cite>                
+                <time datetime="<?php echo comment_time(DateTime::ISO8601); ?>">
+                    <a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>"><?php comment_time('F jS, Y'); ?></a>
+                </time>
+            </header>
+
+            <?php if ($comment->comment_approved == '0'): ?>
+            <p class="alert">Your comment is awaiting moderation.</p>
+            <?php endif; ?>
+
+            <section>
+                <?php comment_text(); ?>                
+            </section>
+
+            <p><?php comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?></p>
+            
+        </article>
+    <?php // <li> is added by WP automatically lol ?>
+<?php 
 }
 
 // ### search form

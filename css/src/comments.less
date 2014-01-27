@@ -6,17 +6,76 @@
 
         h5,
         ul,
+        ol,
         li,
         p {
             padding-right: 0;
             padding-left: 0;
         }
 
-        ul {
+        h5 {
+            font-size: 1em;
+        }
+
+        ul, ol {
+
             li {
                 padding: .1em 0;                
+
+                ul {
+                    padding-left: 30px;
+                }            
+
+                // this should kill the numbering
                 &:before {
                     display:none;
+                }
+            }
+        }
+
+        // comment base class
+        .comment {            
+            font-size: @base-font-size * .8;
+
+            article {
+                position: relative;
+                padding: 0 10px .6em 0;
+                color: @primary-gray;
+
+                header {
+                    padding: 0;                    
+
+                    img {
+                       display:block;
+                       float:right;
+                    }
+
+                    cite {
+                        display:inline;
+                        padding: .2em 0;                        
+                        .font-roboto-slab(1.4em, 300);
+
+                        a:link {
+                            color: @primary-gray;
+                        }
+                    }
+
+                    time {                        
+
+                        a:link {
+                            color: @secondary-gray;
+                        }
+                    }
+                }
+
+                // comment content
+                & > section {
+                    border: 1px solid @tertiary-gray;
+                    padding: 0 20px;
+                }
+
+                .comment-reply-link {
+                    padding:0 20px;
                 }
             }
         }
@@ -116,5 +175,10 @@
             color: @secondary-gray;
             background: transparent;
         }
+    }
+
+    #cancel-comment-reply-link {
+        display: inline-block;
+        padding-left: .6em;        
     }
 }

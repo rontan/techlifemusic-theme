@@ -385,6 +385,9 @@ body {
 .small {
   font-size: .8em;
 }
+.alert {
+  color: #ff9844;
+}
 h1,
 h2,
 h3,
@@ -397,6 +400,9 @@ h6 {
 a:link {
   color: #ff6432;
   text-decoration: none;
+}
+a:link:hover {
+  border-bottom: 1px solid #ff6432;
 }
 .leader {
   text-transform: uppercase;
@@ -720,7 +726,7 @@ nav ul {
 .alert {
   border: 1px solid #ffd0aa;
   background-color: #fff2e7;
-  padding: 10px;
+  padding: 10px !important;
 }
 /** ### sectional styling */
 body {
@@ -945,16 +951,59 @@ body > section {
 }
 #content #comments h5,
 #content #comments ul,
+#content #comments ol,
 #content #comments li,
 #content #comments p {
   padding-right: 0;
   padding-left: 0;
 }
-#content #comments ul li {
+#content #comments h5 {
+  font-size: 1em;
+}
+#content #comments ul li,
+#content #comments ol li {
   padding: .1em 0;
 }
-#content #comments ul li:before {
+#content #comments ul li ul,
+#content #comments ol li ul {
+  padding-left: 30px;
+}
+#content #comments ul li:before,
+#content #comments ol li:before {
   display: none;
+}
+#content #comments .comment {
+  font-size: 12.8pt;
+}
+#content #comments .comment article {
+  position: relative;
+  padding: 0 10px .6em 0;
+  color: #212121;
+}
+#content #comments .comment article header {
+  padding: 0;
+}
+#content #comments .comment article header img {
+  display: block;
+  float: right;
+}
+#content #comments .comment article header cite {
+  display: inline;
+  padding: .2em 0;
+  font: 300 1.4em 'Roboto Slab', sans-serif;
+}
+#content #comments .comment article header cite a:link {
+  color: #212121;
+}
+#content #comments .comment article header time a:link {
+  color: #acacac;
+}
+#content #comments .comment article > section {
+  border: 1px solid #e6e6e6;
+  padding: 0 20px;
+}
+#content #comments .comment article .comment-reply-link {
+  padding: 0 20px;
 }
 #content #comments label {
   display: none;
@@ -1039,4 +1088,8 @@ body > section {
   font-size: .8em;
   color: #acacac;
   background: transparent;
+}
+#content #cancel-comment-reply-link {
+  display: inline-block;
+  padding-left: .6em;
 }

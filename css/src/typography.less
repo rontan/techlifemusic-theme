@@ -36,6 +36,10 @@ body {
     font-size: .8em;
 }
 
+.alert {
+    color: darken(@primary-yellow,20%);
+}
+
 h1,
 h2,
 h3,
@@ -51,6 +55,11 @@ h6 {
 a:link {    
     color: @primary-orange;
     text-decoration: none;
+
+    &:hover {
+        //text-decoration: underline;
+        border-bottom:1px solid @primary-orange;
+    }
 }
 
 // leaders are the tags on sidebar sections and articles

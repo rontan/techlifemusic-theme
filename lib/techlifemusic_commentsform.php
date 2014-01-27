@@ -9,9 +9,7 @@ $siteurl = get_option('siteurl');
     <h5><?php comment_form_title(
         'Leave a Reply',
         'Leave a Reply to %s'
-    ); ?></h5>
-
-    <p><?php cancel_comment_reply_link(); ?></p>
+    ); ?></h5>    
 
     <?php if (get_option('comment_registration') && !is_user_logged_in()) : 
           // if comments require a user to be logged in ?>
@@ -53,6 +51,7 @@ $siteurl = get_option('siteurl');
         <p><textarea id="comment" name="comment" placeholder="Your comment here!" tabindex="4"></textarea></p>
         <p>
             <input id="submit" name="submit" type="submit" tabindex="5" value="Submit" />
+            <?php cancel_comment_reply_link('Cancel'); ?>
             <?php comment_id_fields(); ?>
         </p>
 
