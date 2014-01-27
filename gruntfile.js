@@ -61,7 +61,7 @@ module.exports = (function (contribs) {
             // @module watch
             watch : {
                 scripts : {
-                    files : ['js/src/*.js', 'js/lib/*.js'],
+                    files : ['js/src/**/*.js', 'js/lib/**/*.js'],
                     tasks : ['compile-scripts-production'],
                     options : {
                         interrupt : true,
