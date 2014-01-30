@@ -299,5 +299,28 @@ nav {
             .font-roboto-slab(.6em);
         }
     }
+
+    // roll / recent entries widget
+    .widget_recent_entries {
+
+        li {
+            list-style-type: none;
+            .font-oswald;
+
+            a {
+                .transition(.2s all linear);
+
+                &:link,
+                &:visited {
+                    color: @primary-gray;
+                }
+
+                &:hover {
+                    color: @primary-orange;
+                }
+
+            }
+        }
+    }
    
 }

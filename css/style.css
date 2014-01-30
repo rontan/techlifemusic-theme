@@ -561,6 +561,23 @@ header > nav ul li a {
   color: #acacac;
   font: 300 0.6em 'Roboto Slab', sans-serif;
 }
+#sidebar .widget_recent_entries li {
+  list-style-type: none;
+  font: 700 1em 'Oswald', Calibri, Arial, sans-serif;
+}
+#sidebar .widget_recent_entries li a {
+  -webkit-transition: 0.2s all linear;
+  -moz-transition: 0.2s all linear;
+  -o-transition: 0.2s all linear;
+  transition: 0.2s all linear;
+}
+#sidebar .widget_recent_entries li a:link,
+#sidebar .widget_recent_entries li a:visited {
+  color: #212121;
+}
+#sidebar .widget_recent_entries li a:hover {
+  color: #ff6432;
+}
 /**
  * okaidia theme for JavaScript, CSS and HTML
  * Loosely based on Monokai textmate theme by http://www.monokai.nl/
@@ -962,6 +979,26 @@ body > section {
   min-height: 100px;
   background: #212121;
   display: block;
+}
+#sidebar .widget_recent_entries ul {
+  position: relative;
+  padding-left: 20px;
+  margin: .4em 0;
+}
+#sidebar .widget_recent_entries ul li {
+  margin: .4em 0;
+  list-style-type: none;
+}
+#sidebar .widget_recent_entries ul li:before {
+  content: "";
+  display: inline-block;
+  margin-top: .4em;
+  width: .35em;
+  height: .35em;
+  background: #ff6432;
+  vertical-align: text-top;
+  position: absolute;
+  left: 0;
 }
 #content #comments {
   padding-left: 20px;
