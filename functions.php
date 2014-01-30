@@ -30,9 +30,19 @@ function techlifemusic_custom_image_sizes ($sizes) {
 function techlifemusic_register_sidebars () {
 
     register_sidebar(array(
-        'id' => 'main-sidebar',
+        'id' => 'main-sb',
         'name' => 'Primary Sidebar',
         'description' => 'The primary (duh) sidebar, located in the content area.',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h4 class="leader">',
+        'after_title' => '</h4>'
+        ));
+
+    register_sidebar(array(
+        'id' => 'secondary-sb',
+        'name' => 'Sub Sidebar',
+        'description' => 'Displays on the same placeholder as the primary sidebar, but displays on a less prioritized block on some layouts.',
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget' => '</div>',
         'before_title' => '<h4>',

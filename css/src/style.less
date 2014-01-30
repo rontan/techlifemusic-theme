@@ -135,7 +135,7 @@ body {
 }
 
 #content {
-    margin-top: 1em;    
+    margin: 1em 0;
 
     article {
 
@@ -306,6 +306,30 @@ body {
             padding-bottom: .6em;
         }
     }
+}
+
+#sidebar {
+
+    .widget {
+
+        border-top: 1px solid @tertiary-gray;        
+        .bodypadding;
+
+        padding-top: .4em;
+        padding-bottom: .4em;
+    }
+
+    // about the author widget
+    & .textwidget:first-child {
+
+        img {
+            width: 100%;
+            min-height: 100px;
+            background: @primary-gray;
+            display: block;
+        }    
+    }
+   
 }
 
 @import 'comments';
