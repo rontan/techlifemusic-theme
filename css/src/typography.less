@@ -131,6 +131,26 @@ body {
                 }
             }
         }
+    } 
+
+    & > footer {
+        .column {
+
+            // about the site
+            &:first-child {
+
+                a {
+                    &:link,
+                    &:visited,
+                    &:hover {
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        color: @secondary-white;
+                    }
+                }
+
+            }
+        }
     }
 }
 

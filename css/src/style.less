@@ -99,6 +99,33 @@ body {
     & > section {
         padding-bottom: 2.6em;
     }
+
+    // footer area
+    & > footer {
+        padding: 20px 0;
+        border-top: 4px solid @primary-orange;
+        background: @primary-gray;
+        .bodypadding;
+
+        .column {
+
+            // about the site
+            &:first-child {
+                h5 {
+                    .suffix;
+                    .font-oswald;
+
+                    a {                        
+                        &:link,
+                        &:visited,
+                        &:hover {                            
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 // NOTE: we want the loupe to automatically resize
@@ -315,8 +342,8 @@ body {
         border-top: 1px solid @tertiary-gray;        
         .bodypadding;
 
-        padding-top: .4em;
-        padding-bottom: .4em;
+        padding-top: 20px;
+        padding-bottom: 10px;
     }
 
     // about the author widget
